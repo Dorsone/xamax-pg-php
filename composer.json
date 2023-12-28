@@ -1,0 +1,51 @@
+{
+    "name": "dorsone/xamax-pg-php",
+    "description": "Library for Xamax PaymentGate API",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "pestphp/pest": "3.x-dev",
+        "symfony/var-dumper": "7.1.x-dev",
+        "mockery/mockery": "2.0.x-dev"
+    },
+    "keywords": [
+        "xamax",
+        "bitcoin",
+        "litecoin",
+        "altcoin",
+        "merchant",
+        "gateway",
+        "payment"
+    ],
+    "homepage": "https://xamax.io",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xamax\\PaymentGate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xamax\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jasur Dustmurodov",
+            "email": "jasur.coder@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
