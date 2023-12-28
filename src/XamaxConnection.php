@@ -24,7 +24,7 @@ class XamaxConnection
         $this->connection = new Client([
             'base_uri' => $url,
             'headers' => [
-                'Authorization' => $this->token,
+                'Authorization' => 'Bearer ' . $this->token,
                 'Content-Type' => 'application/json',
                 'Accept' => 'application/json'
             ]
